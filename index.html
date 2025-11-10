@@ -107,46 +107,48 @@
                     'fill-color': [
                         'step',
                         ['get', 'deathPer10k'],
-                        '#FFEDA0',   // stop_output_0
-                        0,          // stop_input_0
-                        '#FED976',   // stop_output_1
-                        6,          // stop_input_1
-                        '#FEB24C',   // stop_output_2
-                        11,          // stop_input_2
-                        '#FD8D3C',   // stop_output_3
-                        16,         // stop_input_3
-                        '#FC4E2A',   // stop_output_4
-                        21,         // stop_input_4
-                        '#E31A1C',   // stop_output_5
-                        26,         // stop_input_5
-                        '#BD0026',   // stop_output_6
-                        31,        // stop_input_6
-                        "#800026"    // stop_output_7
-                    ],
+                        '#FFEDA0',  // 0–5
+                        6, 
+
+                        '#FED976',  // 6–10
+                        11, 
+
+                        '#FEB24C', // 11–15
+                        16, 
+                        
+                        '#FD8D3C', // 16–20
+                        21, 
+                        
+                        '#FC4E2A', // 21–25
+                        26, 
+                        
+                        '#E31A1C', // 26–30
+                        31, 
+                        
+                        '#BD0026'  // 31+
+                        ],
                     'fill-outline-color': '#BBBBBB',
                     'fill-opacity': 0.7,
                 }
             });
             const layers = [
-                '0',
-                '1-5',
-                '6-10',
-                '11-15',
-                '16-20',
-                '21-25',
-                '26-30',
-                '31 and more'
+                '0–5',
+                '6–10',
+                '11–15',
+                '16–20',
+                '21–25',
+                '26–30',
+                '31+'
             ];
             const colors = [
-                '#FFEDA070',
-                '#FED97670',
-                '#FEB24C70',
-                '#FD8D3C70',
-                '#FC4E2A70',
-                '#E31A1C70',
-                '#BD002670',
-                '#80002670'
-            ];
+            '#FFEDA070',
+            '#FED97670',
+            '#FEB24C70',
+            '#FD8D3C70',
+            '#FC4E2A70',
+            '#E31A1C70',
+            '#BD002670',
+        ]
             const legend = document.getElementById('legend');
             legend.innerHTML = "<b>Covid-19 Deaths<br>(per 10,000 people)</b><br><br>";
 
